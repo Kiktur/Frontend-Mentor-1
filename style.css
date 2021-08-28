@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-title: 'Big Shoulders Display', cursive;
+    
+}
+
+.main-cont {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+.section {
+    height: 500px;
+    max-width: 300px;
+}
+
+.content {
+    margin: 30px;
+}
+
+.sedan-cont {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suv-cont {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.lux-cont {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.section-text {
+    font-family: var(--ff-primary);
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    margin-bottom: 5em;
+}
+
+.section-title {
+    font-family: var(--ff-title);
+    color: hsl(0, 0%, 95%);
+}
+
+.button {
+    width: 140px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: var(--ff-primary);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.lux-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.lux-btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media (max-width: 375px) {
+    .main-cont {
+        flex-direction: column;
+        
+    }
+    
+    .section {
+        height: 450px;
+    }
+    
+    .sedan-cont, .lux-cont {
+        border-radius: 0;
+    }
+}
+
